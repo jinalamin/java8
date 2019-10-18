@@ -1,5 +1,6 @@
 package com.yash.demo;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Employee {
@@ -7,8 +8,8 @@ public class Employee {
 	String name;
 	int id;
 	int salary;
-	Date Dob;
-	Date Doj;
+	LocalDate Dob;
+	LocalDate Doj;
 	String role;
 	int experience;
 	Long mobileNumber;
@@ -26,7 +27,7 @@ public class Employee {
 	}
 	
 	
-	public Employee(String name, int id, int salary, Date dob, Date doj, String role, int experience, Long mobileNumber,
+	public Employee(String name, int id, int salary, LocalDate dob, LocalDate doj, String role, int experience, Long mobileNumber,
 			char gender, int age) {
 		super();
 		this.name = name;
@@ -52,22 +53,22 @@ public class Employee {
 	}
 
 
-	public Date getDob() {
+	public LocalDate getDob() {
 		return Dob;
 	}
 
 
-	public void setDob(Date dob) {
+	public void setDob(LocalDate dob) {
 		Dob = dob;
 	}
 
 
-	public Date getDoj() {
+	public LocalDate getDoj() {
 		return Doj;
 	}
 
 
-	public void setDoj(Date doj) {
+	public void setDoj(LocalDate doj) {
 		Doj = doj;
 	}
 
